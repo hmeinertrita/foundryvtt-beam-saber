@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["character", "crew", "vehicle"],
+    "types": ["character", "squad", "vehicle"],
     "character": {
       "callsign": "",
       "pronouns": "",
@@ -9,28 +9,22 @@
       "history": "",
       "opening": "",
       "stress": [0],
-      "traumas": [0],
-      "healing-clock": [0],
+      "scars": [0],
+      "healing-clock": {
+        "value": [0],
+        "max": 4
+      },
+      "drive": "",
+      "drive-clocks": [0, 0],
       "experience": [0],
-      "coins": [0],
-      "coins_stashed": [0],
       "special_abilities": [],
+      "load": 5,
       "loadout": 0,
       "harm": {
-        "light": {
-          "one": "",
-          "two": ""
-        },
-        "medium": {
-          "one": "",
-          "two": ""
-        },
-        "heavy": {
-          "one": ""
-        },
-        "deadly": {
-          "one": ""
-        }
+        "light": ["", ""],
+        "medium": ["", ""],
+        "heavy": [""],
+        "deadly": [""]
       },
       "armor-uses": {
         "armor": 0,
@@ -67,27 +61,32 @@
         }
       }
     },
-    "crew": {
+    "squad": {
       "name": "",
-      "reputation": [0],
-      "lair": "",
+      "reputation": "",
+      "superior": "",
+      "patron": "",
+      "fob": "",
+      "rep": [0],
+      "heart": [0],
       "tier": [0],
-      "deity": "",
       "hold": ["strong"],
+      "trust": 1,
+      "relationship": 0,
       "experience": [0],
       "hold_types": ["weak", "strong"],
-      "coins": {
-        "max": 4,
-        "value": [0]
-      },
-      "vault": {
+      "materiel": {
         "value": [0],
-        "max": 0
+        "max": 4,
+        "storage": [0]
+      },
+      "personnel": {
+        "value": [0],
+        "max": 4,
+        "storage": [0]
       },
       "turfs": [8],
       "features": [],
-      "heat": [0],
-      "wanted": [0]
     },
     "vehicle": {
       "name": "",
@@ -97,7 +96,8 @@
       "breakdowns": [0],
       "repair-clock": [0],
       "exp": [0],
-      "load": [5],
+      "load": 5,
+      "loadout": 0,
       "damage": {
         "light": {
           "one": "",
@@ -113,6 +113,10 @@
         "deadly": {
           "one": ""
         }
+      },
+      "armor-uses": {
+        "value": 0,
+        "max": 4
       },
       "attributes": {
           "expertise": {
