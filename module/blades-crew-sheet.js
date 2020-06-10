@@ -9,8 +9,8 @@ export class BladesCrewSheet extends BladesSheet {
   /** @override */
 	static get defaultOptions() {
 	  return mergeObject(super.defaultOptions, {
-  	  classes: ["blades-in-the-dark", "sheet", "actor"],
-  	  template: "systems/blades-in-the-dark/templates/crew-sheet.html",
+  	  classes: ["beam-saber", "sheet", "actor"],
+  	  template: "systems/beam-saber/templates/crew-sheet.html",
       width: 930,
       height: 1020,
       tabs: [{navSelector: ".tabs", contentSelector: ".tab-content", initial: "turfs"}]
@@ -73,7 +73,7 @@ export class BladesCrewSheet extends BladesSheet {
     // Toggle Turf
     html.find('.turf-select').click(ev => {
       const element = $(ev.currentTarget).parents(".item");
-      
+
       let item_id = element.data("itemId")
       let turf_id = $(ev.currentTarget).data("turfId");
       let turf_current_status = $(ev.currentTarget).data("turfStatus");
@@ -88,7 +88,7 @@ export class BladesCrewSheet extends BladesSheet {
     // Cohort Block Harm handler
     html.find('.cohort-block-harm input[type="radio"]').change(ev => {
       const element = $(ev.currentTarget).parents(".item");
-      
+
       let item_id = element.data("itemId")
       let harm_id = $(ev.currentTarget).val();
 

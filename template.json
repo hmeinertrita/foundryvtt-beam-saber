@@ -1,17 +1,22 @@
 {
-"Actor": {
-  "types": ["character", "crew"],
-  "character": {
-    "alias": "",
-    "stress": [0],
-    "traumas": [0],
-    "healing-clock": [0],
-    "experience": [0],
-    "coins": [0],
-    "coins_stashed": [0],
-    "special_abilities": [],
-    "loadout": 0,
-    "harm": {
+  "Actor": {
+    "types": ["character", "crew", "vehicle"],
+    "character": {
+      "callsign": "",
+      "pronouns": "",
+      "look": "",
+      "tragedy": "",
+      "history": "",
+      "opening": "",
+      "stress": [0],
+      "traumas": [0],
+      "healing-clock": [0],
+      "experience": [0],
+      "coins": [0],
+      "coins_stashed": [0],
+      "special_abilities": [],
+      "loadout": 0,
+      "harm": {
         "light": {
           "one": "",
           "two": ""
@@ -26,20 +31,20 @@
         "deadly": {
           "one": ""
         }
-    },
-    "armor-uses": {
-      "armor": 0,
-      "heavy": 0,
-      "special": 0
-    },
-    "attributes": {
+      },
+      "armor-uses": {
+        "armor": 0,
+        "heavy": 0,
+        "special": 0
+      },
+      "attributes": {
         "insight": {
           "exp": [0],
           "skills": {
             "hunt": [0],
             "study": [0],
             "survey": [0],
-            "tinker": [0]
+            "engineer": [0]
           }
         },
         "prowess": {
@@ -47,307 +52,352 @@
           "skills": {
             "finesse": [0],
             "prowl": [0],
-            "skirmish": [0],
+            "struggle": [0],
             "wreck": [0]
           }
         },
         "resolve": {
           "exp": [0],
           "skills": {
-            "attune": [0],
             "command": [0],
             "consort": [0],
-            "sway": [0]
+            "sway": [0],
+            "interface":[0]
           }
         }
+      }
+    },
+    "crew": {
+      "name": "",
+      "reputation": [0],
+      "lair": "",
+      "tier": [0],
+      "deity": "",
+      "hold": ["strong"],
+      "experience": [0],
+      "hold_types": ["weak", "strong"],
+      "coins": {
+        "max": 4,
+        "value": [0]
+      },
+      "vault": {
+        "value": [0],
+        "max": 0
+      },
+      "turfs": [8],
+      "features": [],
+      "heat": [0],
+      "wanted": [0]
+    },
+    "vehicle": {
+      "name": "",
+      "model": "",
+      "look": "",
+      "quirks": ["","","",""],
+      "breakdowns": [0],
+      "repair-clock": [0],
+      "exp": [0],
+      "load": [5],
+      "damage": {
+        "light": {
+          "one": "",
+          "two": ""
+        },
+        "medium": {
+          "one": "",
+          "two": ""
+        },
+        "heavy": {
+          "one": ""
+        },
+        "deadly": {
+          "one": ""
+        }
+      },
+      "attributes": {
+          "expertise": {
+            "exp": [0],
+            "skills": {
+              "battle": [0],
+              "destroy": [0],
+              "maneuver": [0]
+            }
+          },
+          "acuity": {
+            "exp": [0],
+            "skills": {
+              "bombard": [0],
+              "manipulate": [0],
+              "scan": [0]
+            }
+          }
+        }
+      }
     }
   },
-  "crew": {
-    "name": "",
-    "reputation": [0],
-    "lair": "",
-    "tier": [0],
-    "deity": "",
-    "hold": ["strong"],
-    "experience": [0],
-    "hold_types": ["weak", "strong"],
-    "coins": {
-      "max": 4,
-      "value": [0]
+  "Item": {
+    "types": ["item", "class", "ability", "heritage", "background", "vice", "crew_upgrade", "cohort", "crew_type", "crew_reputation", "crew_upgrade", "crew_ability"],
+    "templates": {
+      "default": {
+        "description": ""
+      },
+      "ability": {
+        "description": "",
+        "class": "",
+        "price": 1
+      },
+      "logic": {
+        "logic": ""
+      }
     },
-    "vault": {
-      "value": [0],
-      "max": 0
+    "item": {
+      "templates": ["default"],
+      "class": "",
+      "load": 0
     },
-    "turfs": [8],
-    "features": [],
-    "heat": [0],
-    "wanted": [0]
-  }
-},
-"Item": {
-  "types": ["item", "class", "ability", "heritage", "background", "vice", "crew_upgrade", "cohort", "crew_type", "crew_reputation", "crew_upgrade", "crew_ability"],
-  "templates": {
-    "default": {
-      "description": ""
+    "class": {
+      "templates": ["default"],
+      "experience_clues": "",
+      "base_skills": {
+        "hunt": [0],
+        "study": [0],
+        "survey": [0],
+        "tinker": [0],
+        "finesse": [0],
+        "prowl": [0],
+        "skirmish": [0],
+        "wreck": [0],
+        "attune": [0],
+        "command": [0],
+        "consort": [0],
+        "sway": [0]
+      }
     },
     "ability": {
-      "description": "",
-      "class": "",
-      "price": 1
+      "templates": ["ability"]
     },
-    "logic": {
-      "logic": ""
-    }
-  },
-  "item": {
-    "templates": ["default"],
-    "class": "",
-    "load": 0
-  },
-  "class": {
-    "templates": ["default"],
-    "experience_clues": "",
-    "base_skills": {
-      "hunt": [0],
-      "study": [0],
-      "survey": [0],
-      "tinker": [0],
-      "finesse": [0],
-      "prowl": [0],
-      "skirmish": [0],
-      "wreck": [0],
-      "attune": [0],
-      "command": [0],
-      "consort": [0],
-      "sway": [0]
-    }
-  },
-  "ability": {
-    "templates": ["ability"]
-  },
-  "heritage": {
-    "templates": ["default"]
-  },
-  "background": {
-    "templates": ["default"]
-  },
-  "vice": {
-    "templates": ["default"]
-  },
-  "cohort": {
-    "templates": ["default"],
-    "cohort": ["Gang"],
-    "scale": 0,
-    "quality": 0,
-    "cohort_list": {
-      "Gang": {
-        "label": "Gang"
+    "heritage": {
+      "templates": ["default"]
+    },
+    "background": {
+      "templates": ["default"]
+    },
+    "vice": {
+      "templates": ["default"]
+    },
+    "cohort": {
+      "templates": ["default"],
+      "cohort": ["Gang"],
+      "scale": 0,
+      "quality": 0,
+      "cohort_list": {
+        "Gang": {
+          "label": "Gang"
+        },
+        "Expert": {
+          "label": "Expert"
+        }
       },
-      "Expert": {
-        "label": "Expert"
-      }
-    },
-    "gang_type": ["Adepts"],
-    "gang_type_list": {
+      "gang_type": ["Adepts"],
+      "gang_type_list": {
 
-      "Adepts": {
-        "label": "Adepts",
-        "description": "Scholars, tinkerers, occultists, and chemists."
+        "Adepts": {
+          "label": "Adepts",
+          "description": "Scholars, tinkerers, occultists, and chemists."
+        },
+        "Rooks": {
+          "label": "Rooks",
+          "description": "Con artists, spies, and socialites."
+        },
+        "Rovers": {
+          "label": "Rovers",
+          "description": "Sailors, carriage drivers, and deathlands scavengers."
+        },
+        "Skulks": {
+          "label": "Skulks",
+          "description": "Scouts, infiltrators, and thieves."
+        },
+        "Thugs": {
+          "label": "Thugs",
+          "description": "Scouts, infiltrators, and thieves."
+        }
       },
-      "Rooks": {
-        "label": "Rooks",
-        "description": "Con artists, spies, and socialites."
+      "expert_type": "",
+      "status": [],
+      "statuses": [],
+      "edges": [],
+      "edges_list": {
+        "Fearsome": {
+          "label": "Fearsome",
+          "description": "The cohort is terrifying in aspect and reputation."
+        },
+        "Independent": {
+          "label": "Independent",
+          "description": "The cohort can be trusted to make good decisions and act on their own initiative in the absence of direct orders."
+        },
+        "Loyal": {
+          "label": "Loyal",
+          "description": "The cohort can’t be bribed or turned against you."
+        },
+        "Tenacious": {
+          "label": "Tenacious",
+          "description": "The cohort won’t be deterred from a task."
+        }
       },
-      "Rovers": {
-        "label": "Rovers",
-        "description": "Sailors, carriage drivers, and deathlands scavengers."
+      "flaws": [],
+      "flaws_list": {
+        "Principled": {
+          "label": "Principled",
+          "description": "The cohort has an ethic or values that it won’t betray."
+        },
+        "Savage": {
+          "label": "Savage",
+          "description": "The cohort is excessively violent and cruel."
+        },
+        "Unreliable": {
+          "label": "Unreliable",
+          "description": "The cohort isn’t always available, due to other obligations, stupefaction from their vices, etc."
+        },
+        "Wild": {
+          "label": "Wild",
+          "description": "The cohort is drunken, debauched, and loud-mouthed."
+        }
       },
-      "Skulks": {
-        "label": "Skulks",
-        "description": "Scouts, infiltrators, and thieves."
+      "harm": ["No"],
+      "harm_list": {
+        "No": {
+          "label": "No Harm",
+          "description": "The cohort is healthy.",
+          "value": 0
+        },
+        "Weakened": {
+          "label": "Weakened",
+          "description": "The cohort has reduced effect.",
+          "value": 1
+        },
+        "Impaired": {
+          "label": "Impaired",
+          "description": "The cohort operates with reduced quality (-1d).",
+          "value": 2
+        },
+        "Broken": {
+          "label": "Broken",
+          "description": "The cohort can’t do anything until they recover.",
+          "value": 3
+        },
+        "Dead": {
+          "label": "Dead",
+          "description": "The cohort is destroyed. You can spend coin equal to your Tier +2 to restore it, plus two downtime activities to recruit new gang members, or hire a new expert.",
+          "value": 4
+        }
       },
-      "Thugs": {
-        "label": "Thugs",
-        "description": "Scouts, infiltrators, and thieves."
-      }
+      "armor": false
     },
-    "expert_type": "",
-    "status": [],
-    "statuses": [],
-    "edges": [],
-    "edges_list": {
-      "Fearsome": {
-        "label": "Fearsome",
-        "description": "The cohort is terrifying in aspect and reputation."
-      },
-      "Independent": {
-        "label": "Independent",
-        "description": "The cohort can be trusted to make good decisions and act on their own initiative in the absence of direct orders."
-      },
-      "Loyal": {
-        "label": "Loyal",
-        "description": "The cohort can’t be bribed or turned against you."
-      },
-      "Tenacious": {
-        "label": "Tenacious",
-        "description": "The cohort won’t be deterred from a task."
-      }
+    "crew_reputation": {
+      "templates": ["default"]
     },
-    "flaws": [],
-    "flaws_list": {
-      "Principled": {
-        "label": "Principled",
-        "description": "The cohort has an ethic or values that it won’t betray."
-      },
-      "Savage": {
-        "label": "Savage",
-        "description": "The cohort is excessively violent and cruel."
-      },
-      "Unreliable": {
-        "label": "Unreliable",
-        "description": "The cohort isn’t always available, due to other obligations, stupefaction from their vices, etc."
-      },
-      "Wild": {
-        "label": "Wild",
-        "description": "The cohort is drunken, debauched, and loud-mouthed."
-      }
+    "crew_upgrade": {
+      "templates": ["ability", "logic"],
+      "crew_type": ""
     },
-    "harm": ["No"],
-    "harm_list": {
-      "No": {
-        "label": "No Harm",
-        "description": "The cohort is healthy.",
-        "value": 0
-      },
-      "Weakened": {
-        "label": "Weakened",
-        "description": "The cohort has reduced effect.",
-        "value": 1
-      },
-      "Impaired": {
-        "label": "Impaired",
-        "description": "The cohort operates with reduced quality (-1d).",
-        "value": 2
-      },
-      "Broken": {
-        "label": "Broken",
-        "description": "The cohort can’t do anything until they recover.",
-        "value": 3
-      },
-      "Dead": {
-        "label": "Dead",
-        "description": "The cohort is destroyed. You can spend coin equal to your Tier +2 to restore it, plus two downtime activities to recruit new gang members, or hire a new expert.",
-        "value": 4
-      }
+    "crew_ability": {
+      "templates": ["ability"]
     },
-    "armor": false
-  },
-  "crew_reputation": {
-    "templates": ["default"]
-  },
-  "crew_upgrade": {
-    "templates": ["ability", "logic"],
-    "crew_type": ""
-  },
-  "crew_ability": {
-    "templates": ["ability"]
-  },
-  "crew_type": {
-    "description": "",
-    "experience_clues": "",
-    "turfs": {
-      "1": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "2": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "3": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "4": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "5": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "6": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "7": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "8": {
-        "name": "Lair",
-        "value": 1,
-        "description": "",
-        "connects": []
-      },
-      "9": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "10": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "11": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "12": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "13": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "14": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
-      },
-      "15": {
-        "name": "",
-        "value": "",
-        "description": "",
-        "connects": []
+    "crew_type": {
+      "description": "",
+      "experience_clues": "",
+      "turfs": {
+        "1": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "2": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "3": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "4": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "5": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "6": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "7": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "8": {
+          "name": "Lair",
+          "value": 1,
+          "description": "",
+          "connects": []
+        },
+        "9": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "10": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "11": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "12": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "13": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "14": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        },
+        "15": {
+          "name": "",
+          "value": "",
+          "description": "",
+          "connects": []
+        }
       }
     }
   }
-}
 }

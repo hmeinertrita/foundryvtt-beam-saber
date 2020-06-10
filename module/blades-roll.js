@@ -69,7 +69,7 @@ export async function bladesRoll(dice_amount, attribute_name = "") {
 
   }
 
-  let result = await renderTemplate("systems/blades-in-the-dark/templates/blades-roll.html", {rolls: rolls, roll_status: roll_status, attribute_name: attribute_name});
+  let result = await renderTemplate("systems/beam-saber/templates/blades-roll.html", {rolls: rolls, roll_status: roll_status, attribute_name: attribute_name});
 
   let messageData = {
     speaker: speaker,

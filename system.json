@@ -1,86 +1,86 @@
 {
-  "name": "blades-in-the-dark",
-  "title": "Blades in the Dark",
-  "description": "Blades in the dark game system.",
-  "version": "0.6.0",
+  "name": "beam-saber",
+  "title": "Beam Saber",
+  "description": "Beam Saber by Austin Ramsay. Based on code by megastruktur https://github.com/megastruktur/foundryvtt-beam-saber/",
+  "version": "0.0.0",
   "minimumCoreVersion": "0.5.3",
-  "compatibleCoreVersion": "0.6.0",
+  "compatibleCoreVersion": "0.6.2",
   "templateVersion": 1,
-  "author": "megastruktur",
+  "author": "kacyhasthecandy",
   "esmodules": ["module/blades.js"],
   "styles": ["styles/blades.css"],
   "languages": ["en"],
-  "url": "https://github.com/megastruktur/foundryvtt-blades-in-the-dark/",
-  "manifest": "https://raw.githubusercontent.com/megastruktur/foundryvtt-blades-in-the-dark/0.6.0/system.json",
-  "download": "https://github.com/megastruktur/foundryvtt-blades-in-the-dark/archive/0.6.0.zip",
+  "url": "https://github.com/megastruktur/foundryvtt-beam-saber/",
+  "manifest": "https://raw.githubusercontent.com/megastruktur/foundryvtt-beam-saber/0.6.0/system.json",
+  "download": "https://github.com/megastruktur/foundryvtt-beam-saber/archive/0.6.0.zip",
   "packs": [
     {
       "name": "class",
       "label": "Classes",
-      "system": "blades-in-the-dark",
+      "system": "beam-saber",
       "path": "./packs/classes.db",
       "entity": "Item"
     },
     {
       "name": "heritage",
       "label": "Heritages",
-      "system": "blades-in-the-dark",
+      "system": "beam-saber",
       "path": "./packs/heritages.db",
       "entity": "Item"
     },
     {
       "name": "vice",
       "label": "Vices",
-      "system": "blades-in-the-dark",
+      "system": "beam-saber",
       "path": "./packs/vices.db",
       "entity": "Item"
     },
     {
       "name": "background",
       "label": "Backgrounds",
-      "system": "blades-in-the-dark",
+      "system": "beam-saber",
       "path": "./packs/backgrounds.db",
       "entity": "Item"
     },
     {
       "name": "item",
       "label": "Items",
-      "system": "blades-in-the-dark",
+      "system": "beam-saber",
       "path": "./packs/items.db",
       "entity": "Item"
     },
     {
       "name": "ability",
       "label": "Abilities",
-      "system": "blades-in-the-dark",
+      "system": "beam-saber",
       "path": "./packs/abilities.db",
       "entity": "Item"
     },
     {
       "name": "crew_reputation",
       "label": "Crew Reputation",
-      "system": "blades-in-the-dark",
+      "system": "beam-saber",
       "path": "./packs/crew_reputation.db",
       "entity": "Item"
     },
     {
       "name": "crew_type",
       "label": "Crew Types",
-      "system": "blades-in-the-dark",
+      "system": "beam-saber",
       "path": "./packs/crew_types.db",
       "entity": "Item"
     },
     {
       "name": "crew_upgrade",
       "label": "Crew Upgrades",
-      "system": "blades-in-the-dark",
+      "system": "beam-saber",
       "path": "./packs/crew_upgrades.db",
       "entity": "Item"
     },
     {
       "name": "crew_ability",
       "label": "Crew Abilities",
-      "system": "blades-in-the-dark",
+      "system": "beam-saber",
       "path": "./packs/crew_abilities.db",
       "entity": "Item"
     }

@@ -10,8 +10,8 @@ export class BladesActorSheet extends BladesSheet {
   /** @override */
 	static get defaultOptions() {
 	  return mergeObject(super.defaultOptions, {
-  	  classes: ["blades-in-the-dark", "sheet", "actor"],
-  	  template: "systems/blades-in-the-dark/templates/actor-sheet.html",
+  	  classes: ["beam-saber", "sheet", "actor"],
+  	  template: "systems/beam-saber/templates/actor-sheet.html",
       width: 700,
       height: 970,
       tabs: [{navSelector: ".tabs", contentSelector: ".tab-content", initial: "abilities"}]
@@ -59,7 +59,7 @@ export class BladesActorSheet extends BladesSheet {
 
   /** @override */
   _updateObject(event, formData) {
-    
+
     // Update the Actor
     return this.object.update(formData);
   }

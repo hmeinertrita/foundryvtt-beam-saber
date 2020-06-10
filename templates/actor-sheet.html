@@ -9,7 +9,7 @@
       </div>
 
       <div id="character-traits" class="flex-column">
-        
+
         <div class="item-block flex-horizontal">
           <div class="item-class-label"><a class="item-add-popup" data-distinct="true" data-item-type="heritage">Heritage</a></div>
           {{#each actor.items as |item id|}}
@@ -77,11 +77,11 @@
 
     <div class="grow-two">
       <div id="alias">
-        <label for="character-alias">Alias</label>
-        <input type="text" id="character-alias" name="data.alias" value="{{data.alias}}">
+        <label for="character-alias">Call Sign</label>
+        <input type="text" id="character-alias" name="data.callsign" value="{{data.callsign}}">
       </div>
 
-      {{> "systems/blades-in-the-dark/templates/parts/coins.html"}}
+      {{> "systems/beam-saber/templates/parts/coins.html"}}
     </div>
 
   </section>
@@ -162,8 +162,8 @@
         <span class="checkmark">soft</span>
       </label>
       <label>
-        <input type="checkbox" name="data.traumas" value="unstable">
-        <span class="checkmark">unstable</span>
+        <input type="checkbox" name="data.traumas" value="fracticious">
+        <span class="checkmark">fracticious</span>
       </label>
       <label>
         <input type="checkbox" name="data.traumas" value="vicious">
@@ -215,8 +215,8 @@
                 <input id="armor-uses-heavy" type="checkbox" name="data.armor-uses.heavy" {{checked data.armor-uses.heavy}}>
               </div>
               <div>
-                <label for="armor-uses-special">Special</label>
-                <input id="armor-uses-special" type="checkbox" name="data.armor-uses.special" {{checked data.armor-uses.special}}>
+                <label for="armor-uses-spark">Spark</label>
+                <input id="armor-uses-spark" type="checkbox" name="data.armor-uses.spark" {{checked data.armor-uses.spark}}>
               </div>
             </td>
           </tr>
@@ -289,7 +289,7 @@
             {{/multiboxes}}
           </div>
         </div>
-  
+
         <div id="abilities-list">
           {{#each actor.items as |item id|}}
           {{#if (eq item.type "ability")}}
@@ -354,7 +354,7 @@
 
     </div>
     {{!-- Attributes --}}
-    {{> "systems/blades-in-the-dark/templates/parts/attributes.html"}}
+    {{> "systems/beam-saber/templates/parts/attributes.html"}}
   </section>
 
 </form>
