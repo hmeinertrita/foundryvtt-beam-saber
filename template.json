@@ -10,10 +10,7 @@
       "opening": "",
       "stress": [0],
       "scars": [0],
-      "healing-clock": {
-        "value": [0],
-        "max": 4
-      },
+      "healing-clock": [0],
       "drive": "",
       "drive-clocks": [0, 0],
       "experience": [0],
@@ -29,7 +26,7 @@
       "armor-uses": {
         "armor": 0,
         "heavy": 0,
-        "special": 0
+        "spark": 0
       },
       "attributes": {
         "insight": {
@@ -86,7 +83,7 @@
         "storage": [0]
       },
       "turfs": [8],
-      "features": [],
+      "features": []
     },
     "vehicle": {
       "name": "",
@@ -99,41 +96,30 @@
       "load": 5,
       "loadout": 0,
       "damage": {
-        "light": {
-          "one": "",
-          "two": ""
-        },
-        "medium": {
-          "one": "",
-          "two": ""
-        },
-        "heavy": {
-          "one": ""
-        },
-        "deadly": {
-          "one": ""
-        }
+        "light": ["", ""],
+        "medium": ["", ""],
+        "heavy": [""],
+        "deadly": [""]
       },
       "armor-uses": {
         "value": 0,
         "max": 4
       },
       "attributes": {
-          "expertise": {
-            "exp": [0],
-            "skills": {
-              "battle": [0],
-              "destroy": [0],
-              "maneuver": [0]
-            }
-          },
-          "acuity": {
-            "exp": [0],
-            "skills": {
-              "bombard": [0],
-              "manipulate": [0],
-              "scan": [0]
-            }
+        "expertise": {
+          "exp": [0],
+          "skills": {
+            "battle": [0],
+            "destroy": [0],
+            "maneuver": [0]
+          }
+        },
+        "acuity": {
+          "exp": [0],
+          "skills": {
+            "bombard": [0],
+            "manipulate": [0],
+            "scan": [0]
           }
         }
       }

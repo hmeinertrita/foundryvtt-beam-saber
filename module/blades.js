@@ -36,7 +36,7 @@ Hooks.once("init", async function() {
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("blades", BladesActorSheet, { types: ["character"], makeDefault: true });
-  Actors.registerSheet("blades", BladesCrewSheet, { types: ["crew"], makeDefault: true });
+  Actors.registerSheet("blades", BladesCrewSheet, { types: ["squad"], makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("blades", BladesItemSheet, {makeDefault: true});
   preloadHandlebarsTemplates();
@@ -44,26 +44,33 @@ Hooks.once("init", async function() {
 
   // Multiboxes.
   Handlebars.registerHelper('multiboxes', function(selected, options) {
-    
+
     let html = options.fn(this);
-    
-    selected.forEach(selected_value => {
-      if (selected_value !== false) {
-        const escapedValue = RegExp.escape(Handlebars.escapeExpression(selected_value));
+
+    let arr = selected
+
+    if (!Array.isArray(selected)) {
+      arr = [selected]
+    }
+
+    for (let value of arr) {
+      if (value !== false) {
+        const escapedValue = RegExp.escape(Handlebars.escapeExpression(value));
         const rgx = new RegExp(' value=\"' + escapedValue + '\"');
         html = html.replace(rgx, "$& checked=\"checked\"");
       }
-    });
+    }
+
     return html;
   });
 
   // Trauma Counter
   Handlebars.registerHelper('traumacounter', function(selected, options) {
-    
+
     let html = options.fn(this);
     var count = selected.length;
     if (count > 4) count = 4;
-    
+
     const rgx = new RegExp(' value=\"' + count + '\"');
     return html.replace(rgx, "$& checked=\"checked\"");
 
@@ -90,17 +97,6 @@ Hooks.once("init", async function() {
       const rgx = new RegExp(' value=\"' + i + '\"');
       html = html.replace(rgx, "$& disabled=\"disabled\"");
     }
-    return html;
-  });
-
-  Handlebars.registerHelper('crew_vault_coins', (max_coins, options) => {
-
-    let html = options.fn(this);
-    for (let i = 1; i <= max_coins; i++) {
-
-      html += "<input type=\"radio\" id=\"crew-coins-vault-" + i + "\" name=\"data.vault.value\" value=\"" + i + "\"><label for=\"crew-coins-vault-" + i + "\"></label>";
-    }
-
     return html;
   });
 
@@ -142,7 +138,7 @@ Hooks.on("createOwnedItem", (parent_entity, child_data, options, userId) => {
 });
 
 Hooks.on("deleteOwnedItem", (parent_entity, child_data, options, userId) => {
-  
+
   BladesHelpers.undoItemLogic(child_data, parent_entity);
   return true;
 });
