@@ -2,9 +2,9 @@ export class BladesHelpers {
 
   /**
    * Removes a duplicate item type from charlist.
-   * 
-   * @param {Object} item_data 
-   * @param {Entity} actor 
+   *
+   * @param {Object} item_data
+   * @param {Entity} actor
    */
   static removeDuplicatedItemType(item_data, actor) {
 
@@ -22,28 +22,29 @@ export class BladesHelpers {
 
   /**
    * _getFormData() override helper.
-   * @param {*} form 
+   * @param {*} form
    */
   static getFormDataHelper(form, editors) {
+    console.log('pulling form data')
 
     const FD = new FormData(form);
     const dtypes = {};
     const editorTargets = Object.keys(editors);
-    
+
     // Always include checkboxes
     for ( let el of form.elements ) {
       if ( !el.name ) continue;
 
       // Handle Radio groups
       if ( form[el.name] instanceof RadioNodeList ) {
-        
+
         const inputs = Array.from(form[el.name]);
         if ( inputs.every(i => i.disabled) ) FD.delete(k);
-        
+
         let values = "";
         let type = "Checkboxes";
         values = inputs.map(i => i.checked ? i.value : false).filter(i => i);
-        
+
         FD.set(el.name, JSON.stringify(values));
         dtypes[el.name] = 'Radio';
       }
@@ -92,8 +93,8 @@ export class BladesHelpers {
 
   /**
    * Add item modification if logic exists.
-   * @param {Object} item_data 
-   * @param {Entity} entity 
+   * @param {Object} item_data
+   * @param {Entity} entity
    */
   static callItemLogic(item_data, entity) {
 
@@ -103,14 +104,14 @@ export class BladesHelpers {
       if (logic) {
         // Different logic behav. dep on operator.
         switch (logic.operator) {
-  
+
           // Add when creating.
           case "addition":
             entity.update({
               [logic.attribute]: Number(BladesHelpers.getNestedProperty(entity, "data." + logic.attribute)) + logic.value
             });
             break;
-  
+
         }
       }
 
@@ -120,8 +121,8 @@ export class BladesHelpers {
 
   /**
    * Undo Item modifications when item is removed.
-   * @param {Object} item_data 
-   * @param {Entity} entity 
+   * @param {Object} item_data
+   * @param {Entity} entity
    */
   static undoItemLogic(item_data, entity) {
 
@@ -146,8 +147,8 @@ export class BladesHelpers {
 
   /**
    * Get a nested dynamic attribute.
-   * @param {Object} obj 
-   * @param {string} property 
+   * @param {Object} obj
+   * @param {string} property
    */
   static getNestedProperty(obj, property) {
     return property.split('.').reduce((r, e) => {
@@ -174,16 +175,16 @@ export class BladesHelpers {
 
   /**
    * Get the list of all available ingame items by Type.
-   * 
-   * @param {string} item_type 
-   * @param {Object} game 
+   *
+   * @param {string} item_type
+   * @param {Object} game
    */
   static async getAllItemsByType(item_type, game) {
 
     let list_of_items = [];
     let game_items = [];
     let compendium_items = [];
-    
+
     game_items = game.items.filter(e => e.type === item_type).map(e => {return e.data});
 
     let pack = game.packs.find(e => e.metadata.name === item_type);

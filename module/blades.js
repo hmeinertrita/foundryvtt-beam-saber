@@ -67,13 +67,27 @@ Hooks.once("init", async function() {
   // Trauma Counter
   Handlebars.registerHelper('traumacounter', function(selected, options) {
 
-    let html = options.fn(this);
-    var count = selected.length;
-    if (count > 4) count = 4;
+    let el = $( '<div></div>' )
+    el.html(options.fn(this))
+    const count = selected.length > 4 ? 4 : selected.length
 
-    const rgx = new RegExp(' value=\"' + count + '\"');
-    return html.replace(rgx, "$& checked=\"checked\"");
+    el.find('[value="' + count + '"]').attr('checked', true)
+    return el.html()
 
+  });
+
+  // Load Counter
+  Handlebars.registerHelper('loadcounter', function(selected, options) {
+
+    let el = $( '<div></div>' )
+    el.html(options.fn(this))
+
+    const loadout = selected.reduce(((total, id) => total + parseInt(el.find('[value=' + id + ']').attr('data-load'))), 0)
+    el.find('#loadout-count').html(loadout)
+
+    console.log(el.html())
+
+    return el.html()
   });
 
   // Equals handlebar.

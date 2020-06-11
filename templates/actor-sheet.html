@@ -255,27 +255,31 @@
       </div>
 
       {{!-- Owned Items Tab --}}
+      {{#loadcounter data.equipped}}
       <div id="loadout" class="tab flex-vertical" data-tab="loadout">
         <div class="label-stripe flex-horizontal">
-          <p>Loadout: {{data.loadout}}</p>
+          <p>Loadout: <span id="loadout-count"></span>/{{data.load}}</p>
           <p><a class="item-add-popup" data-item-type="item"><i class="fas fa-plus-square"></i></a></p>
         </div>
         <div>
+          {{#multiboxes data.equipped}}
           {{#each actor.items as |item id|}}
           {{#if (eq item.type "item")}}
             <div class="item flex-horizontal" data-item-id="{{item._id}}">
               <div class="item-body flex-horizontal">
                 <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
                 <div class="item-name">{{item.name}}</div>
-                <div class="item-description">{{item.data.description}}</div>
+                <input type="checkbox" name="data.equipped" value="{{item._id}}" data-load="{{item.data.load}}">
               </div>
               <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
             </div>
           {{/if}}
           {{/each}}
+          {{/multiboxes}}
           <div class="item-class-label"><a class="item-add-popup" data-item-type="item">Add Item</a></div>
         </div>
       </div>
+      {{/loadcounter}}
 
       <div class="tab flex-vertical" data-tab="character-notes">
         <div class="label-stripe">

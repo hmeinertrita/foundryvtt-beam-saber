@@ -20,16 +20,16 @@ export class BladesActorSheet extends BladesSheet {
 
   /* -------------------------------------------- */
 
-  /** @override */
-  getData() {
-    const data = super.getData();
-
-    // Calculate Load
-    let loadout = 0;
-    data.items.forEach(i => {loadout += (i.type === "item") ? parseInt(i.data.load) : 0});
-    data.data.loadout = loadout;
-    return data;
-  }
+  // /** @override */
+  // getData() {
+  //   const data = super.getData();
+	//
+  //   // Calculate Load
+  //   let loadout = 0;
+  //   data.items.forEach(i => {loadout += (i.type === "item") ? parseInt(i.data.load) : 0});
+  //   data.data.loadout = loadout;
+  //   return data;
+  // }
 
   /* -------------------------------------------- */
 
