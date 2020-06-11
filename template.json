@@ -12,16 +12,29 @@
       "scars": [0],
       "healing-clock": [0],
       "drive": "",
-      "drive-clocks": [0, 0],
+      "drive-clocks": {
+        "one": [0],
+        "two": [0]
+      },
       "experience": [0],
       "special_abilities": [],
       "equipped": [],
       "load": 5,
       "harm": {
-        "light": ["", ""],
-        "medium": ["", ""],
-        "heavy": [""],
-        "deadly": [""]
+        "light": {
+          "one": "",
+          "two": ""
+        },
+        "medium": {
+          "one": "",
+          "two": ""
+        },
+        "heavy": {
+          "one": ""
+        },
+        "deadly": {
+          "one": ""
+        }
       },
       "armor-uses": {
         "armor": 0,
@@ -54,6 +67,107 @@
             "consort": [0],
             "sway": [0],
             "interface":[0]
+          }
+        }
+      },
+      "connections": {
+        "one": {
+          "name": "",
+          "ticks": [0],
+          "beliefs": {
+            "one": "",
+            "two": "",
+            "three": ""
+          }
+        },
+        "two": {
+          "name": "",
+          "ticks": [0],
+          "beliefs": {
+            "one": "",
+            "two": "",
+            "three": ""
+          }
+        },
+        "three": {
+          "name": "",
+          "ticks": [0],
+          "beliefs": {
+            "one": "",
+            "two": "",
+            "three": ""
+          }
+        },
+        "four": {
+          "name": "",
+          "ticks": [0],
+          "beliefs": {
+            "one": "",
+            "two": "",
+            "three": ""
+          }
+        },
+        "five": {
+          "name": "",
+          "ticks": [0],
+          "beliefs": {
+            "one": "",
+            "two": "",
+            "three": ""
+          }
+        },
+        "one": {
+          "name": "",
+          "ticks": [0],
+          "beliefs": {
+            "one": "",
+            "two": "",
+            "three": ""
+          }
+        },
+        "six": {
+          "name": "",
+          "ticks": [0],
+          "beliefs": {
+            "one": "",
+            "two": "",
+            "three": ""
+          }
+        },
+        "seven": {
+          "name": "",
+          "ticks": [0],
+          "beliefs": {
+            "one": "",
+            "two": "",
+            "three": ""
+          }
+        },
+        "eight": {
+          "name": "",
+          "ticks": [0],
+          "beliefs": {
+            "one": "",
+            "two": "",
+            "three": ""
+          }
+        },
+        "nine": {
+          "name": "",
+          "ticks": [0],
+          "beliefs": {
+            "one": "",
+            "two": "",
+            "three": ""
+          }
+        },
+        "ten": {
+          "name": "",
+          "ticks": [0],
+          "beliefs": {
+            "one": "",
+            "two": "",
+            "three": ""
           }
         }
       }
@@ -95,10 +209,20 @@
       "exp": [0],
       "load": 5,
       "damage": {
-        "light": ["", ""],
-        "medium": ["", ""],
-        "heavy": [""],
-        "deadly": [""]
+        "light": {
+          "one": "",
+          "two": ""
+        },
+        "medium": {
+          "one": "",
+          "two": ""
+        },
+        "heavy": {
+          "one": ""
+        },
+        "deadly": {
+          "one": ""
+        }
       },
       "armor-uses": {
         "value": 0,

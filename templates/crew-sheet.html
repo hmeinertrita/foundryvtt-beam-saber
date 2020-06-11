@@ -7,7 +7,7 @@
         <label for="crew-name">Name</label>
         <input type="text" id="crew-name" name="name" value="{{actor.name}}">
       </div>
-  
+
       <div class="flex-vertical">
         <div class="item-class-label">
           <a class="item-add-popup" data-distinct="true" data-item-type="crew_reputation">Crew Reputation</a>
@@ -25,7 +25,7 @@
         {{/each}}
       </div>
     </div>
-  
+
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
 
     <div class="grow-two flex-vertical">
@@ -107,95 +107,6 @@
       {{/multiboxes}}
       <div class="gray-label">Turf</div>
     </div>
-
-    {{!-- Coins --}}
-    <div id="crew-coins">
-
-      <div id="crew-coins-hands">
-        <div class="stripe">
-          <label for="crew-coins-hands-0">Coins</label>
-        </div>
-        <div class="crew-coins coins-hands">
-          {{#multiboxes data.coins.value}}
-          <input type="radio" id="crew-coins-hands-0" name="data.coins.value" value="0" checked="checked">
-          <input type="radio" id="crew-coins-hands-1" name="data.coins.value" value="1">
-          <label for="crew-coins-hands-1"></label>
-          <input type="radio" id="crew-coins-hands-2" name="data.coins.value" value="2">
-          <label for="crew-coins-hands-2"></label>
-          <input type="radio" id="crew-coins-hands-3" name="data.coins.value" value="3">
-          <label for="crew-coins-hands-3"></label>
-          <input type="radio" id="crew-coins-hands-4" name="data.coins.value" value="4">
-          <label for="crew-coins-hands-4"></label>
-          {{/multiboxes}}
-        </div>
-      </div>
-
-      {{#if data.vault.max}}
-      <div id="crew-coins-vault">
-        
-        <div class="stripe">
-          <label for="crew-coins-vault-0">Vault</label>
-        </div>
-        <div class="crew-coins coins-vault">
-          {{#multiboxes data.vault.value}}
-          <input type="radio" id="crew-coins-vault-0" name="data.vault.value" value="0" checked="checked">
-          {{#crew_vault_coins data.vault.max}}{{/crew_vault_coins}}
-          {{/multiboxes}}
-        </div>
-
-      </div>
-      {{/if}}
-    
-    </div>
-
-    {{!-- Heat/Wanted --}}
-    <div id="heat-wanted" class="flex-horizontal big-teeth-section">
-  
-      <div id="crew-heat" class="big-teeth">
-        {{#multiboxes data.heat}}
-        <input type="radio" id="crew-heat-0" name="data.heat" value="0" dtype="Radio">
-        <label class="black-label" for="crew-heat-0">Heat</label>
-        <input type="radio" id="crew-heat-1" name="data.heat" value="1" dtype="Radio">
-        <label for="crew-heat-1"></label>
-        <input type="radio" id="crew-heat-2" name="data.heat" value="2" dtype="Radio">
-        <label for="crew-heat-2"></label>
-        <input type="radio" id="crew-heat-3" name="data.heat" value="3" dtype="Radio">
-        <label for="crew-heat-3"></label>
-        <input type="radio" id="crew-heat-4" name="data.heat" value="4" dtype="Radio">
-        <label for="crew-heat-4"></label>
-        <input type="radio" id="crew-heat-5" name="data.heat" value="5" dtype="Radio">
-        <label for="crew-heat-5"></label>
-        <input type="radio" id="crew-heat-6" name="data.heat" value="6" dtype="Radio">
-        <label for="crew-heat-6"></label>
-        <input type="radio" id="crew-heat-7" name="data.heat" value="7" dtype="Radio">
-        <label for="crew-heat-7"></label>
-        <input type="radio" id="crew-heat-8" name="data.heat" value="8" dtype="Radio">
-        <label for="crew-heat-8"></label>
-        <input type="radio" id="crew-heat-9" name="data.heat" value="9" dtype="Radio">
-        <label for="crew-heat-9"></label>
-        {{/multiboxes}}
-  
-      </div>
-      <div id="crew-wanted-container" class="small-teeth-container">
-        {{#multiboxes data.wanted}}
-        <div id="crew-wanted" class="small-teeth-wrap">
-          <label class="black-label" for="crew-wanted-counter-0">Wanted</label>
-          <div class="small-teeth">
-            <input type="radio" id="crew-wanted-counter-0" name="data.wanted" value="0">
-            <input type="radio" id="crew-wanted-counter-1" name="data.wanted" value="1">
-            <label for="crew-wanted-counter-1"></label>
-            <input type="radio" id="crew-wanted-counter-2" name="data.wanted" value="2">
-            <label for="crew-wanted-counter-2"></label>
-            <input type="radio" id="crew-wanted-counter-3" name="data.wanted" value="3">
-            <label for="crew-wanted-counter-3"></label>
-            <input type="radio" id="crew-wanted-counter-4" name="data.wanted" value="4">
-            <label for="crew-wanted-counter-4"></label>
-          </div>
-        </div>
-        {{/multiboxes}}
-      </div>
-  
-    </div>
   </section>
 
   <section class="flex-horizontal">
@@ -250,18 +161,6 @@
   <section class="tab-content">
 
     {{!-- Turfs --}}
-    <div class="tab" data-tab="turfs">
-      <div class="label-stripe">
-        <p><label>Turfs</label></p>
-      </div>
-      {{#each actor.items as |item id|}}
-      {{#if (eq item.type "crew_type")}}
-      <div class="item" data-item-id="{{item._id}}">
-      {{> "systems/beam-saber/templates/parts/turf-list.html" turfs_data=item.data.turfs can_edit=false}}
-      </div>
-      {{/if}}
-      {{/each}}
-    </div>
 
 
     {{!-- Crew Upgrades --}}
@@ -311,9 +210,9 @@
       <div class="cohorts flex-horizontal">
         {{#each actor.items as |item id|}}
           {{#if (eq item.type "cohort")}}
-          
+
             {{> "systems/beam-saber/templates/parts/cohort-block.html" item=item}}
-    
+
           {{/if}}
         {{/each}}
       </div>

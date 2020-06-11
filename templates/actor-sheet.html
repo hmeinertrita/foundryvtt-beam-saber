@@ -10,6 +10,26 @@
 
       <div id="character-traits" class="flex-column">
 
+        <div id="pronouns">
+          <label for="character-pronouns">Pronouns</label>
+          <input type="text" id="character-pronouns" name="data.pronouns" value="{{data.pronouns}}">
+        </div>
+        <div id="look">
+          <label for="character-look">Look</label>
+          <input type="text" id="character-look" name="data.look" value="{{data.look}}">
+        </div>
+        <div id="tragedy">
+          <label for="character-tragedy">Tragedy</label>
+          <input type="text" id="character-tragedy" name="data.tragedy" value="{{data.tragedy}}">
+        </div>
+        <div id="history">
+          <label for="character-history">History</label>
+          <input type="text" id="character-history" name="data.history" value="{{data.history}}">
+        </div>
+        <div id="opening">
+          <label for="character-opening">Opening</label>
+          <input type="text" id="character-opening" name="data.opening" value="{{data.opening}}">
+        </div>
       </div>
     </div>
 
@@ -136,7 +156,7 @@
         <h3>3</h3>
         <div class="harm-inputs">
           {{#each data.harm.heavy}}
-            <input type="text" class="harm-input" name="data.harm.heavy[{{@index}}]" value="{{this}}">
+            <input type="text" class="harm-input" name="data.harm.heavy.{{@key}}" value="{{this}}">
           {{/each}}
         </div>
         <p>Need Help</p>
@@ -145,7 +165,7 @@
         <h3>2</h3>
         <div class="harm-inputs">
           {{#each data.harm.medium}}
-            <input type="text" class="harm-input" name="data.harm.medium[{{@index}}]" value="{{this}}">
+            <input type="text" class="harm-input" name="data.harm.medium.{{@key}}" value="{{this}}">
           {{/each}}
         </div>
         <p>-1D</p>
@@ -154,7 +174,7 @@
         <h3>1</h3>
         <div class="harm-inputs">
           {{#each data.harm.light}}
-            <input type="text" class="harm-input" name="data.harm.light[{{@index}}]" value="{{this}}">
+            <input type="text" class="harm-input" name="data.harm.light.{{@key}}" value="{{this}}">
           {{/each}}
         </div>
         <p>Less Effect</p>
@@ -191,6 +211,27 @@
         <input id="armor-uses-spark" type="checkbox" name="data.armor-uses.spark" {{checked data.armor-uses.spark}}>
       </div>
     </div>
+    <div id="character-armor">
+      <h2 class="black-white">Drive</h2>
+      <input type="text" name="data.drive" value="{{data.drive}}">
+      {{#each data.[drive-clocks]}}
+      <div>
+        {{#multiboxes this}}
+        <div class="character-drive-clock">
+          <input type="radio" value="0" id="character-drive-clock-{{@key}}-0" name="data.drive-clocks.{{@key}}" checked="checked">
+          <input type="radio" value="1" id="character-drive-clock-{{@key}}-1" name="data.drive-clocks.{{@key}}">
+          <label for="character-drive-clock-{{@key}}-1"></label>
+          <input type="radio" value="2" id="character-drive-clock-{{@key}}-2" name="data.drive-clocks.{{@key}}">
+          <label for="character-drive-clock-{{@key}}-2"></label>
+          <input type="radio" value="3" id="character-drive-clock-{{@key}}-3" name="data.drive-clocks.{{@key}}">
+          <label for="character-drive-clock-{{@key}}-3"></label>
+          <input type="radio" value="4" id="character-drive-clock-{{@key}}-4" name="data.drive-clocks.{{@key}}">
+          <label for="character-drive-clock-{{@key}}-4"></label>
+        </div>
+        {{/multiboxes}}
+      </div>
+      {{/each}}
+    </div>
   </section>
 
 
@@ -204,6 +245,7 @@
       {{!-- Nav menu --}}
       <nav class="tabs flex-horizontal">
         <a class="item" data-tab="abilities">Abilities</a>
+        <a class="item" data-tab="connections">Connections</a>
         <a class="item" data-tab="loadout">Loadout</a>
         <a class="item" data-tab="character-notes">Notes</a>
         <a class="item" data-tab="all-character-items">All Items</a>
@@ -237,7 +279,6 @@
             {{/multiboxes}}
           </div>
         </div>
-
         <div id="abilities-list">
           {{#each actor.items as |item id|}}
           {{#if (eq item.type "ability")}}
@@ -251,6 +292,43 @@
           {{/if}}
           {{/each}}
           <div class="item-class-label"><a class="item-add-popup" data-item-type="ability">Add Ability</a></div>
+        </div>
+      </div>
+
+      <div id="connections" class="tab flex-vertical" data-tab="connections">
+        <div class="label-stripe">
+          <p>Connections</p>
+        </div>
+        <div>
+          {{#each data.connections}}
+          <div class="connection-clock">
+            <input name="data.connections.{{@key}}.name" value="{{this.name}}">
+            <div id="character-connection-{{@key}}" class="teeth-connection">
+              {{#multiboxes this.ticks}}
+              <input type="radio" id="connection-{{@key}}-0" name="data.connections.{{@key}}.ticks" value="0" dtype="Radio">
+              <div>
+                <input type="text" name="data.connections.{{@key}}.beliefs.one" value="{{this.beliefs.one}}">
+                <input type="radio" id="connection-{{@key}}-1" name="data.connections.{{@key}}.ticks" value="1" dtype="Radio">
+                <label for="connection-{{@key}}-1"></label>
+              </div>
+              <div>
+                <input type="text" name="data.connections.{{@key}}.beliefs.two" value="{{this.beliefs.two}}">
+                <input type="radio" id="connection-{{@key}}-2" name="data.connections.{{@key}}.ticks" value="2" dtype="Radio">
+                <label for="connection-{{@key}}-2"></label>
+              </div>
+              <div>
+                <input type="text" name="data.connections.{{@key}}.beliefs.three" value="{{this.beliefs.three}}">
+                <input type="radio" id="connection-{{@key}}-3" name="data.connections.{{@key}}.ticks" value="3" dtype="Radio">
+                <label for="connection-{{@key}}-3"></label>
+              </div>
+              <div>
+                <input type="radio" id="connection-{{@key}}-4" name="data.connections.{{@key}}.ticks" value="4" dtype="Radio">
+                <label for="connection-{{@key}}-4"></label>
+              </div>
+              {{/multiboxes}}
+            </div>
+          </div>
+          {{/each}}
         </div>
       </div>
 
