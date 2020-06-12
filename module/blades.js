@@ -98,20 +98,23 @@ Hooks.once("init", async function() {
   });
 
   // ReputationTurf handlebar.
-  Handlebars.registerHelper('repturf', (turfs_amount, options) => {
-    let html = options.fn(this);
-    var turfs_amount_int = parseInt(turfs_amount);
+  Handlebars.registerHelper('storage', (storage, options) => {
+    let el = $( '<div></div>' )
+    el.html(options.fn(this))
+
+    var storageUpgrades = parseInt(storage[0]);
 
     // Can't be more than 6.
-    if (turfs_amount_int > 6) {
-      turfs_amount_int = 6;
+    if (storageUpgrades > 2) {
+      storageUpgrades = 2;
     }
 
-    for (let i = 13 - turfs_amount_int; i <= 12; i++) {
-      const rgx = new RegExp(' value=\"' + i + '\"');
-      html = html.replace(rgx, "$& disabled=\"disabled\"");
+    const enabledStorage = 4 * Math.pow(2, storageUpgrades)
+
+    for (let i = 0; i <= 16; i++) {
+      el.find('[value=' + i + ']').attr('disabled', i > enabledStorage)
     }
-    return html;
+    return el.html();
   });
 
   Handlebars.registerHelper('crew_experience', (options) => {

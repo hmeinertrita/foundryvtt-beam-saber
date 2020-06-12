@@ -76,7 +76,6 @@
   <section class="flex-horizontal">
     <div id="crew-reputation">
       {{#multiboxes data.reputation}}
-      {{#repturf data.turfs_amount}}
       <input type="radio" id="crew-reputation-0" name="data.reputation" value="0" dtype="Radio">
       <label class="black-label" for="crew-reputation-0">Rep</label>
       <input type="radio" id="crew-reputation-1" name="data.reputation" value="1" dtype="Radio">
@@ -91,21 +90,140 @@
       <label for="crew-reputation-5"></label>
       <input type="radio" id="crew-reputation-6" name="data.reputation" value="6" dtype="Radio">
       <label for="crew-reputation-6"></label>
-      <input type="radio" id="crew-reputation-7" name="data.reputation" value="7" dtype="Radio">
-      <label for="crew-reputation-7"></label>
-      <input type="radio" id="crew-reputation-8" name="data.reputation" value="8" dtype="Radio">
-      <label for="crew-reputation-8"></label>
-      <input type="radio" id="crew-reputation-9" name="data.reputation" value="9" dtype="Radio" >
-      <label for="crew-reputation-9"></label>
-      <input type="radio" id="crew-reputation-10" name="data.reputation" value="10" dtype="Radio" >
-      <label for="crew-reputation-10"></label>
-      <input type="radio" id="crew-reputation-11" name="data.reputation" value="11" dtype="Radio" >
-      <label for="crew-reputation-11"></label>
-      <input type="radio" id="crew-reputation-12" name="data.reputation" value="12" dtype="Radio" >
-      <label for="crew-reputation-12"></label>
-      {{/repturf}}
       {{/multiboxes}}
-      <div class="gray-label">Turf</div>
+    </div>
+    <div id="crew-heart">
+      {{#multiboxes data.reputation}}
+      <input type="radio" id="crew-heart-0" name="data.heart" value="0" dtype="Radio">
+      <label class="black-label" for="crew-heart-0">Heart</label>
+      <input type="radio" id="crew-heart-1" name="data.heart" value="1" dtype="Radio">
+      <label for="crew-heart-1"></label>
+      <input type="radio" id="crew-heart-2" name="data.heart" value="2" dtype="Radio">
+      <label for="crew-heart-2"></label>
+      <input type="radio" id="crew-heart-3" name="data.heart" value="3" dtype="Radio">
+      <label for="crew-heart-3"></label>
+      <input type="radio" id="crew-heart-4" name="data.heart" value="4" dtype="Radio">
+      <label for="crew-heart-4"></label>
+      <input type="radio" id="crew-heart-5" name="data.heart" value="5" dtype="Radio">
+      <label for="crew-heart-5"></label>
+      <input type="radio" id="crew-heart-6" name="data.heart" value="6" dtype="Radio">
+      <label for="crew-heart-6"></label>
+      {{/multiboxes}}
+    </div>
+  </section>
+
+  <section class="flex-horizontal">
+    <div id="crew-materiel">
+      <div>
+        {{#multiboxes data.materiel.storage}}
+        <input type="radio" id="crew-materiel-storage-0" name="data.materiel.storage" value="0" dtype="Radio">
+        <label class="black-label" for="crew-materiel-storage-0">Storage</label>
+        <input type="radio" id="crew-materiel-storage-1" name="data.materiel.storage" value="1" dtype="Radio">
+        <label for="crew-materiel-storage-1"></label>
+        <input type="radio" id="crew-materiel-storage-2" name="data.materiel.storage" value="2" dtype="Radio">
+        <label for="crew-materiel-storage-2"></label>
+        {{/multiboxes}}
+      </div>
+      {{#multiboxes data.materiel.value}}
+      {{#storage data.materiel.storage}}
+      <input type="radio" id="crew-materiel-0" name="data.materiel.value" value="0" dtype="Radio">
+      <label class="black-label" for="crew-materiel-0">Materiel</label>
+      <div class="supply-section">
+        <input type="radio" id="crew-materiel-1" name="data.materiel.value" value="1" dtype="Radio">
+        <label for="crew-materiel-1"></label>
+        <input type="radio" id="crew-materiel-2" name="data.materiel.value" value="2" dtype="Radio">
+        <label for="crew-materiel-2"></label>
+        <input type="radio" id="crew-materiel-3" name="data.materiel.value" value="3" dtype="Radio">
+        <label for="crew-materiel-3"></label>
+        <input type="radio" id="crew-materiel-4" name="data.materiel.value" value="4" dtype="Radio">
+        <label for="crew-materiel-4"></label>
+      </div>
+      <div class="supply-section">
+        <input type="radio" id="crew-materiel-5" name="data.materiel.value" value="5" dtype="Radio">
+        <label for="crew-materiel-5"></label>
+        <input type="radio" id="crew-materiel-6" name="data.materiel.value" value="6" dtype="Radio">
+        <label for="crew-materiel-6"></label>
+        <input type="radio" id="crew-materiel-7" name="data.materiel.value" value="7" dtype="Radio">
+        <label for="crew-materiel-7"></label>
+        <input type="radio" id="crew-materiel-8" name="data.materiel.value" value="8" dtype="Radio">
+        <label for="crew-materiel-9"></label>
+      </div>
+      <div class="supply-section">
+        <input type="radio" id="crew-materiel-9" name="data.materiel.value" value="9" dtype="Radio">
+        <label for="crew-materiel-9"></label>
+        <input type="radio" id="crew-materiel-10" name="data.materiel.value" value="10" dtype="Radio">
+        <label for="crew-materiel-10"></label>
+        <input type="radio" id="crew-materiel-11" name="data.materiel.value" value="11" dtype="Radio">
+        <label for="crew-materiel-11"></label>
+        <input type="radio" id="crew-materiel-12" name="data.materiel.value" value="12" dtype="Radio">
+        <label for="crew-materiel-12"></label>
+        <input type="radio" id="crew-materiel-13" name="data.materiel.value" value="13" dtype="Radio">
+        <label for="crew-materiel-13"></label>
+        <input type="radio" id="crew-materiel-14" name="data.materiel.value" value="14" dtype="Radio">
+        <label for="crew-materiel-14"></label>
+        <input type="radio" id="crew-materiel-15" name="data.materiel.value" value="15" dtype="Radio">
+        <label for="crew-materiel-15"></label>
+        <input type="radio" id="crew-materiel-16" name="data.materiel.value" value="16" dtype="Radio">
+        <label for="crew-materiel-16"></label>
+      </div>
+      {{/storage}}
+      {{/multiboxes}}
+    </div>
+    <div id="crew-personnel">
+      <div>
+        {{#multiboxes data.personnel.storage}}
+        <input type="radio" id="crew-personnel-storage-0" name="data.personnel.storage" value="0" dtype="Radio">
+        <label class="black-label" for="crew-personnel-storage-0">Storage</label>
+        <input type="radio" id="crew-personnel-storage-1" name="data.personnel.storage" value="1" dtype="Radio">
+        <label for="crew-personnel-storage-1"></label>
+        <input type="radio" id="crew-personnel-storage-2" name="data.personnel.storage" value="2" dtype="Radio">
+        <label for="crew-personnel-storage-2"></label>
+        {{/multiboxes}}
+      </div>
+      {{#multiboxes data.personnel.value}}
+      {{#storage data.personnel.storage}}
+      <input type="radio" id="crew-personnel-0" name="data.personnel.value" value="0" dtype="Radio">
+      <label class="black-label" for="crew-personnel-0">Personnel</label>
+      <div class="supply-section">
+        <input type="radio" id="crew-personnel-1" name="data.personnel.value" value="1" dtype="Radio">
+        <label for="crew-personnel-1"></label>
+        <input type="radio" id="crew-personnel-2" name="data.personnel.value" value="2" dtype="Radio">
+        <label for="crew-personnel-2"></label>
+        <input type="radio" id="crew-personnel-3" name="data.personnel.value" value="3" dtype="Radio">
+        <label for="crew-personnel-3"></label>
+        <input type="radio" id="crew-personnel-4" name="data.personnel.value" value="4" dtype="Radio">
+        <label for="crew-personnel-4"></label>
+      </div>
+      <div class="supply-section">
+        <input type="radio" id="crew-personnel-5" name="data.personnel.value" value="5" dtype="Radio">
+        <label for="crew-personnel-5"></label>
+        <input type="radio" id="crew-personnel-6" name="data.personnel.value" value="6" dtype="Radio">
+        <label for="crew-personnel-6"></label>
+        <input type="radio" id="crew-personnel-7" name="data.personnel.value" value="7" dtype="Radio">
+        <label for="crew-personnel-7"></label>
+        <input type="radio" id="crew-personnel-8" name="data.personnel.value" value="8" dtype="Radio">
+        <label for="crew-personnel-9"></label>
+      </div>
+      <div class="supply-section">
+        <input type="radio" id="crew-personnel-9" name="data.personnel.value" value="9" dtype="Radio">
+        <label for="crew-personnel-9"></label>
+        <input type="radio" id="crew-personnel-10" name="data.personnel.value" value="10" dtype="Radio">
+        <label for="crew-personnel-10"></label>
+        <input type="radio" id="crew-personnel-11" name="data.personnel.value" value="11" dtype="Radio">
+        <label for="crew-personnel-11"></label>
+        <input type="radio" id="crew-personnel-12" name="data.personnel.value" value="12" dtype="Radio">
+        <label for="crew-personnel-12"></label>
+        <input type="radio" id="crew-personnel-13" name="data.personnel.value" value="13" dtype="Radio">
+        <label for="crew-personnel-13"></label>
+        <input type="radio" id="crew-personnel-14" name="data.personnel.value" value="14" dtype="Radio">
+        <label for="crew-personnel-14"></label>
+        <input type="radio" id="crew-personnel-15" name="data.personnel.value" value="15" dtype="Radio">
+        <label for="crew-personnel-15"></label>
+        <input type="radio" id="crew-personnel-16" name="data.personnel.value" value="16" dtype="Radio">
+        <label for="crew-personnel-16"></label>
+      </div>
+      {{/storage}}
+      {{/multiboxes}}
     </div>
   </section>
 

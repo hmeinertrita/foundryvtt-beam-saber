@@ -188,12 +188,10 @@
       "hold_types": ["weak", "strong"],
       "materiel": {
         "value": [0],
-        "max": 4,
         "storage": [0]
       },
       "personnel": {
         "value": [0],
-        "max": 4,
         "storage": [0]
       },
       "turfs": [8],
