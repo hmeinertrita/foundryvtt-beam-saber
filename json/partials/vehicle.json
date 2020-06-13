@@ -1,0 +1,48 @@
+{
+  "name": "",
+  "model": "",
+  "look": "",
+  "quirks": ["","","",""],
+  "breakdowns": [0],
+  "repair-clock": [0],
+  "exp": [0],
+  "load": 5,
+  "damage": {
+    "light": {
+      "one": "",
+      "two": ""
+    },
+    "medium": {
+      "one": "",
+      "two": ""
+    },
+    "heavy": {
+      "one": ""
+    },
+    "deadly": {
+      "one": ""
+    }
+  },
+  "armor-uses": {
+    "value": 0,
+    "max": 4
+  },
+  "attributes": {
+    "expertise": {
+      "exp": [0],
+      "skills": {
+        "battle": [0],
+        "destroy": [0],
+        "maneuver": [0]
+      }
+    },
+    "acuity": {
+      "exp": [0],
+      "skills": {
+        "bombard": [0],
+        "manipulate": [0],
+        "scan": [0]
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "callsign": "",
+  "pronouns": "",
+  "look": "",
+  "tragedy": "",
+  "history": "",
+  "opening": "",
+  "stress": [0],
+  "scars": [0],
+  "healing-clock": [0],
+  "drive": "",
+  "drive-clocks": {
+    "one": [0],
+    "two": [0]
+  },
+  "experience": [0],
+  "special_abilities": [],
+  "equipped": [],
+  "load": 5,
+  "harm": {
+    "light": {
+      "one": "",
+      "two": ""
+    },
+    "medium": {
+      "one": "",
+      "two": ""
+    },
+    "heavy": {
+      "one": ""
+    },
+    "deadly": {
+      "one": ""
+    }
+  },
+  "armor-uses": {
+    "armor": 0,
+    "heavy": 0,
+    "spark": 0
+  },
+  "attributes": {
+    "insight": {
+      "exp": [0],
+      "skills": {
+        "hunt": [0],
+        "study": [0],
+        "survey": [0],
+        "engineer": [0]
+      }
+    },
+    "prowess": {
+      "exp": [0],
+      "skills": {
+        "finesse": [0],
+        "prowl": [0],
+        "struggle": [0],
+        "wreck": [0]
+      }
+    },
+    "resolve": {
+      "exp": [0],
+      "skills": {
+        "command": [0],
+        "consort": [0],
+        "sway": [0],
+        "interface":[0]
+      }
+    }
+  },
+  "connections": {
+    "one": {
+      "name": "",
+      "ticks": [0],
+      "beliefs": {
+        "one": "",
+        "two": "",
+        "three": ""
+      }
+    },
+    "two": {
+      "name": "",
+      "ticks": [0],
+      "beliefs": {
+        "one": "",
+        "two": "",
+        "three": ""
+      }
+    },
+    "three": {
+      "name": "",
+      "ticks": [0],
+      "beliefs": {
+        "one": "",
+        "two": "",
+        "three": ""
+      }
+    },
+    "four": {
+      "name": "",
+      "ticks": [0],
+      "beliefs": {
+        "one": "",
+        "two": "",
+        "three": ""
+      }
+    },
+    "five": {
+      "name": "",
+      "ticks": [0],
+      "beliefs": {
+        "one": "",
+        "two": "",
+        "three": ""
+      }
+    },
+    "one": {
+      "name": "",
+      "ticks": [0],
+      "beliefs": {
+        "one": "",
+        "two": "",
+        "three": ""
+      }
+    },
+    "six": {
+      "name": "",
+      "ticks": [0],
+      "beliefs": {
+        "one": "",
+        "two": "",
+        "three": ""
+      }
+    },
+    "seven": {
+      "name": "",
+      "ticks": [0],
+      "beliefs": {
+        "one": "",
+        "two": "",
+        "three": ""
+      }
+    },
+    "eight": {
+      "name": "",
+      "ticks": [0],
+      "beliefs": {
+        "one": "",
+        "two": "",
+        "three": ""
+      }
+    },
+    "nine": {
+      "name": "",
+      "ticks": [0],
+      "beliefs": {
+        "one": "",
+        "two": "",
+        "three": ""
+      }
+    },
+    "ten": {
+      "name": "",
+      "ticks": [0],
+      "beliefs": {
+        "one": "",
+        "two": "",
+        "three": ""
+      }
+    }
+  }
+}

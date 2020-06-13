@@ -1,6 +1,10 @@
 {
   "Actor": {
-    "types": ["character", "squad", "vehicle"],
+    "types": [
+      "character",
+      "squad",
+      "vehicle"
+    ],
     "character": {
       "callsign": "",
       "pronouns": "",
@@ -8,15 +12,27 @@
       "tragedy": "",
       "history": "",
       "opening": "",
-      "stress": [0],
-      "scars": [0],
-      "healing-clock": [0],
+      "stress": [
+        0
+      ],
+      "scars": [
+        0
+      ],
+      "healing-clock": [
+        0
+      ],
       "drive": "",
       "drive-clocks": {
-        "one": [0],
-        "two": [0]
+        "one": [
+          0
+        ],
+        "two": [
+          0
+        ]
       },
-      "experience": [0],
+      "experience": [
+        0
+      ],
       "special_abilities": [],
       "equipped": [],
       "load": 5,
@@ -43,37 +59,69 @@
       },
       "attributes": {
         "insight": {
-          "exp": [0],
+          "exp": [
+            0
+          ],
           "skills": {
-            "hunt": [0],
-            "study": [0],
-            "survey": [0],
-            "engineer": [0]
+            "hunt": [
+              0
+            ],
+            "study": [
+              0
+            ],
+            "survey": [
+              0
+            ],
+            "engineer": [
+              0
+            ]
           }
         },
         "prowess": {
-          "exp": [0],
+          "exp": [
+            0
+          ],
           "skills": {
-            "finesse": [0],
-            "prowl": [0],
-            "struggle": [0],
-            "wreck": [0]
+            "finesse": [
+              0
+            ],
+            "prowl": [
+              0
+            ],
+            "struggle": [
+              0
+            ],
+            "wreck": [
+              0
+            ]
           }
         },
         "resolve": {
-          "exp": [0],
+          "exp": [
+            0
+          ],
           "skills": {
-            "command": [0],
-            "consort": [0],
-            "sway": [0],
-            "interface":[0]
+            "command": [
+              0
+            ],
+            "consort": [
+              0
+            ],
+            "sway": [
+              0
+            ],
+            "interface": [
+              0
+            ]
           }
         }
       },
       "connections": {
         "one": {
           "name": "",
-          "ticks": [0],
+          "ticks": [
+            0
+          ],
           "beliefs": {
             "one": "",
             "two": "",
@@ -82,7 +130,9 @@
         },
         "two": {
           "name": "",
-          "ticks": [0],
+          "ticks": [
+            0
+          ],
           "beliefs": {
             "one": "",
             "two": "",
@@ -91,7 +141,9 @@
         },
         "three": {
           "name": "",
-          "ticks": [0],
+          "ticks": [
+            0
+          ],
           "beliefs": {
             "one": "",
             "two": "",
@@ -100,7 +152,9 @@
         },
         "four": {
           "name": "",
-          "ticks": [0],
+          "ticks": [
+            0
+          ],
           "beliefs": {
             "one": "",
             "two": "",
@@ -109,16 +163,9 @@
         },
         "five": {
           "name": "",
-          "ticks": [0],
-          "beliefs": {
-            "one": "",
-            "two": "",
-            "three": ""
-          }
-        },
-        "one": {
-          "name": "",
-          "ticks": [0],
+          "ticks": [
+            0
+          ],
           "beliefs": {
             "one": "",
             "two": "",
@@ -127,7 +174,9 @@
         },
         "six": {
           "name": "",
-          "ticks": [0],
+          "ticks": [
+            0
+          ],
           "beliefs": {
             "one": "",
             "two": "",
@@ -136,7 +185,9 @@
         },
         "seven": {
           "name": "",
-          "ticks": [0],
+          "ticks": [
+            0
+          ],
           "beliefs": {
             "one": "",
             "two": "",
@@ -145,7 +196,9 @@
         },
         "eight": {
           "name": "",
-          "ticks": [0],
+          "ticks": [
+            0
+          ],
           "beliefs": {
             "one": "",
             "two": "",
@@ -154,7 +207,9 @@
         },
         "nine": {
           "name": "",
-          "ticks": [0],
+          "ticks": [
+            0
+          ],
           "beliefs": {
             "one": "",
             "two": "",
@@ -163,7 +218,9 @@
         },
         "ten": {
           "name": "",
-          "ticks": [0],
+          "ticks": [
+            0
+          ],
           "beliefs": {
             "one": "",
             "two": "",
@@ -178,33 +235,507 @@
       "superior": "",
       "patron": "",
       "fob": "",
-      "rep": [0],
-      "heart": [0],
-      "tier": [0],
-      "hold": ["strong"],
-      "trust": 1,
-      "relationship": 0,
-      "experience": [0],
-      "hold_types": ["weak", "strong"],
+      "rep": [
+        0
+      ],
+      "heart": [
+        0
+      ],
+      "tier": [
+        0
+      ],
+      "hold": [
+        "strong"
+      ],
+      "trust": [
+        1
+      ],
+      "relationship": [
+        0
+      ],
+      "experience": [
+        0
+      ],
+      "hold_types": [
+        "weak",
+        "strong"
+      ],
       "materiel": {
-        "value": [0],
-        "storage": [0]
+        "value": [
+          0
+        ],
+        "storage": [
+          0
+        ]
       },
       "personnel": {
-        "value": [0],
-        "storage": [0]
+        "value": [
+          0
+        ],
+        "storage": [
+          0
+        ]
       },
-      "turfs": [8],
-      "features": []
+      "features": {
+        "forward_operating_base": {
+          "airfield": {
+            "cost": 2,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Airfield"
+          },
+          "barracks": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Barracks"
+          },
+          "blacksite": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Blacksite"
+          },
+          "cctv_network": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "CCTV Network"
+          },
+          "collection_agency": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Collection Agency"
+          },
+          "commissary": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Commissary"
+          },
+          "cover_business": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Cover Business"
+          },
+          "factory": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Factory"
+          },
+          "forgers_workshop": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Forgers Workshop"
+          },
+          "guerilla_hideout": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Guerilla Hideout"
+          },
+          "hack_lab": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Hack Lab"
+          },
+          "hidden_FOB": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Hidden FOB"
+          },
+          "holo_grid": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Holo-Grid"
+          },
+          "infirmary": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Infirmary"
+          },
+          "lighthouse_satellite": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Lightouse Satellite"
+          },
+          "loyal_bar": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Loyal Bar"
+          },
+          "luxury_venue": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Luxury Venue"
+          },
+          "motor_pool": {
+            "cost": 2,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Motor Pool"
+          },
+          "personal_clothier": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Personal Clothier"
+          },
+          "propaganda_radio": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Propaganda Radio"
+          },
+          "public_works": {
+            "cost": 6,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Public Works"
+          },
+          "quarters": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Quarters"
+          },
+          "radar_station": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Radar Station"
+          },
+          "refit_station": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Refit Station"
+          },
+          "regional_records": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Regional Records"
+          },
+          "scrapyard": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Scrapyard"
+          },
+          "secret_routes": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Secret Routes"
+          },
+          "secure_FOB": {
+            "cost": 2,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Secure FOB"
+          },
+          "side_business": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Side Business"
+          },
+          "supercomputer": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Supercomputer"
+          },
+          "training_course": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Training Course"
+          },
+          "transmitter_array": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Transmitter Array"
+          },
+          "trophies_room": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Trophies Room"
+          },
+          "tunnels": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Tunnels"
+          },
+          "warehouse": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Warehouse"
+          },
+          "workshop": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Workshop"
+          }
+        },
+        "quality": {
+          "documents": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Documents"
+          },
+          "gear": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Gear"
+          },
+          "programs": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Programs"
+          },
+          "supplies": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Supplies"
+          },
+          "tools": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Tools"
+          },
+          "pilot_weapons": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Pilot Weapons"
+          },
+          "vehicle_weapons": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Vehicle Weapons"
+          }
+        },
+        "training": {
+          "insight": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Insight"
+          },
+          "prowess": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Prowess"
+          },
+          "resolve": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Resolve"
+          },
+          "test_facility": {
+            "cost": 1,
+            "connected": false,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Test Facility"
+          },
+          "mastery": {
+            "cost": 4,
+            "connected": true,
+            "value": [
+              0
+            ],
+            "description": "",
+            "name": "Mastery"
+          }
+        }
+      }
     },
     "vehicle": {
       "name": "",
       "model": "",
       "look": "",
-      "quirks": ["","","",""],
-      "breakdowns": [0],
-      "repair-clock": [0],
-      "exp": [0],
+      "quirks": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "breakdowns": [
+        0
+      ],
+      "repair-clock": [
+        0
+      ],
+      "exp": [
+        0
+      ],
       "load": 5,
       "damage": {
         "light": {
@@ -228,26 +759,49 @@
       },
       "attributes": {
         "expertise": {
-          "exp": [0],
+          "exp": [
+            0
+          ],
           "skills": {
-            "battle": [0],
-            "destroy": [0],
-            "maneuver": [0]
+            "battle": [
+              0
+            ],
+            "destroy": [
+              0
+            ],
+            "maneuver": [
+              0
+            ]
           }
         },
         "acuity": {
-          "exp": [0],
+          "exp": [
+            0
+          ],
           "skills": {
-            "bombard": [0],
-            "manipulate": [0],
-            "scan": [0]
+            "bombard": [
+              0
+            ],
+            "manipulate": [
+              0
+            ],
+            "scan": [
+              0
+            ]
           }
         }
       }
     }
   },
   "Item": {
-    "types": ["item", "class", "ability", "heritage", "background", "vice", "crew_upgrade", "cohort", "crew_type", "crew_reputation", "crew_upgrade", "crew_ability"],
+    "types": [
+      "item",
+      "class",
+      "ability",
+      "cohort",
+      "crew_type",
+      "crew_ability"
+    ],
     "templates": {
       "default": {
         "description": ""
@@ -256,49 +810,71 @@
         "description": "",
         "class": "",
         "price": 1
-      },
-      "logic": {
-        "logic": ""
       }
     },
     "item": {
-      "templates": ["default"],
+      "templates": [
+        "default"
+      ],
       "class": "",
       "load": 0
     },
     "class": {
-      "templates": ["default"],
+      "templates": [
+        "default"
+      ],
       "experience_clues": "",
       "base_skills": {
-        "hunt": [0],
-        "study": [0],
-        "survey": [0],
-        "tinker": [0],
-        "finesse": [0],
-        "prowl": [0],
-        "skirmish": [0],
-        "wreck": [0],
-        "attune": [0],
-        "command": [0],
-        "consort": [0],
-        "sway": [0]
+        "hunt": [
+          0
+        ],
+        "study": [
+          0
+        ],
+        "survey": [
+          0
+        ],
+        "engineer": [
+          0
+        ],
+        "finesse": [
+          0
+        ],
+        "prowl": [
+          0
+        ],
+        "struggle": [
+          0
+        ],
+        "wreck": [
+          0
+        ],
+        "attune": [
+          0
+        ],
+        "command": [
+          0
+        ],
+        "consort": [
+          0
+        ],
+        "sway": [
+          0
+        ]
       }
     },
     "ability": {
-      "templates": ["ability"]
-    },
-    "heritage": {
-      "templates": ["default"]
-    },
-    "background": {
-      "templates": ["default"]
-    },
-    "vice": {
-      "templates": ["default"]
+      "templates": [
+        "ability"
+      ]
     },
     "cohort": {
-      "templates": ["default"],
-      "cohort": ["Gang"],
+      "templates": [
+        "default"
+      ],
+      "cohort": [
+        "Gang"
+      ],
       "scale": 0,
       "quality": 0,
       "cohort_list": {
@@ -309,9 +885,10 @@
           "label": "Expert"
         }
       },
-      "gang_type": ["Adepts"],
+      "gang_type": [
+        "Adepts"
+      ],
       "gang_type_list": {
-
         "Adepts": {
           "label": "Adepts",
           "description": "Scholars, tinkerers, occultists, and chemists."
@@ -374,7 +951,9 @@
           "description": "The cohort is drunken, debauched, and loud-mouthed."
         }
       },
-      "harm": ["No"],
+      "harm": [
+        "No"
+      ],
       "harm_list": {
         "No": {
           "label": "No Harm",
@@ -403,16 +982,6 @@
         }
       },
       "armor": false
-    },
-    "crew_reputation": {
-      "templates": ["default"]
-    },
-    "crew_upgrade": {
-      "templates": ["ability", "logic"],
-      "crew_type": ""
-    },
-    "crew_ability": {
-      "templates": ["ability"]
     },
     "crew_type": {
       "description": "",
@@ -509,6 +1078,11 @@
           "connects": []
         }
       }
+    },
+    "crew_ability": {
+      "templates": [
+        "ability"
+      ]
     }
   }
 }

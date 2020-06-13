@@ -1,0 +1,18 @@
+{
+  "templates": ["default"],
+  "experience_clues": "",
+  "base_skills": {
+    "hunt": [0],
+    "study": [0],
+    "survey": [0],
+    "engineer": [0],
+    "finesse": [0],
+    "prowl": [0],
+    "struggle": [0],
+    "wreck": [0],
+    "attune": [0],
+    "command": [0],
+    "consort": [0],
+    "sway": [0]
+  }
+}

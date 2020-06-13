@@ -1,0 +1,18 @@
+{
+  "Actor": {
+    "types": ["character", "squad", "vehicle"]
+  },
+  "Item": {
+    "types": ["item", "class", "ability", "cohort", "crew_type", "crew_ability"],
+    "templates": {
+      "default": {
+        "description": ""
+      },
+      "ability": {
+        "description": "",
+        "class": "",
+        "price": 1
+      }
+    }
+  }
+}
