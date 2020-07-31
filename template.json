@@ -276,10 +276,13 @@
           0
         ]
       },
-      "features": {
+      "upgrades": {
         "forward_operating_base": {
           "airfield": {
-            "cost": 2,
+            "cost": [
+              1,
+              2
+            ],
             "connected": false,
             "value": [
               0
@@ -288,7 +291,9 @@
             "name": "Airfield"
           },
           "barracks": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -297,7 +302,9 @@
             "name": "Barracks"
           },
           "blacksite": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -306,7 +313,9 @@
             "name": "Blacksite"
           },
           "cctv_network": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -315,7 +324,9 @@
             "name": "CCTV Network"
           },
           "collection_agency": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -324,7 +335,9 @@
             "name": "Collection Agency"
           },
           "commissary": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -333,7 +346,9 @@
             "name": "Commissary"
           },
           "cover_business": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -342,7 +357,9 @@
             "name": "Cover Business"
           },
           "factory": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -351,7 +368,9 @@
             "name": "Factory"
           },
           "forgers_workshop": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -360,7 +379,9 @@
             "name": "Forgers Workshop"
           },
           "guerilla_hideout": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -369,7 +390,9 @@
             "name": "Guerilla Hideout"
           },
           "hack_lab": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -378,7 +401,9 @@
             "name": "Hack Lab"
           },
           "hidden_FOB": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -387,7 +412,9 @@
             "name": "Hidden FOB"
           },
           "holo_grid": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -396,7 +423,9 @@
             "name": "Holo-Grid"
           },
           "infirmary": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -405,7 +434,9 @@
             "name": "Infirmary"
           },
           "lighthouse_satellite": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -414,7 +445,9 @@
             "name": "Lightouse Satellite"
           },
           "loyal_bar": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -423,7 +456,9 @@
             "name": "Loyal Bar"
           },
           "luxury_venue": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -432,7 +467,10 @@
             "name": "Luxury Venue"
           },
           "motor_pool": {
-            "cost": 2,
+            "cost": [
+              1,
+              2
+            ],
             "connected": false,
             "value": [
               0
@@ -441,7 +479,9 @@
             "name": "Motor Pool"
           },
           "personal_clothier": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -450,7 +490,9 @@
             "name": "Personal Clothier"
           },
           "propaganda_radio": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -459,7 +501,14 @@
             "name": "Propaganda Radio"
           },
           "public_works": {
-            "cost": 6,
+            "cost": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
             "connected": false,
             "value": [
               0
@@ -468,7 +517,9 @@
             "name": "Public Works"
           },
           "quarters": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -477,7 +528,9 @@
             "name": "Quarters"
           },
           "radar_station": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -486,7 +539,9 @@
             "name": "Radar Station"
           },
           "refit_station": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -495,7 +550,9 @@
             "name": "Refit Station"
           },
           "regional_records": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -504,7 +561,9 @@
             "name": "Regional Records"
           },
           "scrapyard": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -513,7 +572,9 @@
             "name": "Scrapyard"
           },
           "secret_routes": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -522,7 +583,10 @@
             "name": "Secret Routes"
           },
           "secure_FOB": {
-            "cost": 2,
+            "cost": [
+              1,
+              2
+            ],
             "connected": false,
             "value": [
               0
@@ -531,7 +595,9 @@
             "name": "Secure FOB"
           },
           "side_business": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -540,7 +606,9 @@
             "name": "Side Business"
           },
           "supercomputer": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -549,7 +617,9 @@
             "name": "Supercomputer"
           },
           "training_course": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -558,7 +628,9 @@
             "name": "Training Course"
           },
           "transmitter_array": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -567,7 +639,9 @@
             "name": "Transmitter Array"
           },
           "trophies_room": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -576,7 +650,9 @@
             "name": "Trophies Room"
           },
           "tunnels": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -585,7 +661,9 @@
             "name": "Tunnels"
           },
           "warehouse": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -594,7 +672,9 @@
             "name": "Warehouse"
           },
           "workshop": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -605,7 +685,9 @@
         },
         "quality": {
           "documents": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -614,7 +696,9 @@
             "name": "Documents"
           },
           "gear": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -623,7 +707,9 @@
             "name": "Gear"
           },
           "programs": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -632,7 +718,9 @@
             "name": "Programs"
           },
           "supplies": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -641,7 +729,9 @@
             "name": "Supplies"
           },
           "tools": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -650,7 +740,9 @@
             "name": "Tools"
           },
           "pilot_weapons": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -659,7 +751,9 @@
             "name": "Pilot Weapons"
           },
           "vehicle_weapons": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -670,7 +764,9 @@
         },
         "training": {
           "insight": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -679,7 +775,9 @@
             "name": "Insight"
           },
           "prowess": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -688,7 +786,9 @@
             "name": "Prowess"
           },
           "resolve": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -697,7 +797,9 @@
             "name": "Resolve"
           },
           "test_facility": {
-            "cost": 1,
+            "cost": [
+              1
+            ],
             "connected": false,
             "value": [
               0
@@ -706,7 +808,12 @@
             "name": "Test Facility"
           },
           "mastery": {
-            "cost": 4,
+            "cost": [
+              1,
+              2,
+              3,
+              4
+            ],
             "connected": true,
             "value": [
               0

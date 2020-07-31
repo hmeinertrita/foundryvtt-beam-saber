@@ -62,7 +62,7 @@ Hooks.once("init", async function() {
     }
 
     return html;
-  });
+  })
 
   // Trauma Counter
   Handlebars.registerHelper('traumacounter', function(selected, options) {

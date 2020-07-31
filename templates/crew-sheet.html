@@ -93,7 +93,7 @@
       {{/multiboxes}}
     </div>
     <div id="crew-heart">
-      {{#multiboxes data.reputation}}
+      {{#multiboxes data.heart}}
       <input type="radio" id="crew-heart-0" name="data.heart" value="0" dtype="Radio">
       <label class="black-label" for="crew-heart-0">Heart</label>
       <input type="radio" id="crew-heart-1" name="data.heart" value="1" dtype="Radio">
@@ -279,6 +279,32 @@
   <section class="tab-content">
 
     {{!-- Turfs --}}
+    <div id="crew-turfs" class="tab grow-two flex-vertical" data-tab="turfs">
+      <div class="label-stripe flex-horizontal">
+        <p>Squad Upgrades</p>
+        <p><a class="item-add-popup" data-item-type="crew_upgrade"><i class="fas fa-plus-square"></i></a></p>
+      </div>
+      {{#each data.upgrades as |category c_id|}}
+      <div class="squad-upgrade-category">
+        <h3>{{@key}}</h3>
+        {{#each this as |upgrade u_id|}}
+        <div class="squad-upgrade">
+          <div>
+            <div>{{upgrade.name}}</div>
+            {{#multiboxes upgrade.value}}
+            <input type="radio" id="squad-{{u_id}}-0" name="data.upgrades.{{c_id}}.{{u_id}}.value" value="0" dtype="Radio">
+            <label for="squad-{{u_id}}-0"></label>
+            {{#each this.cost as |cost i|}}
+            <input type="radio" id="squad-{{u_id}}-{{cost}}" name="data.upgrades.{{c_id}}.{{u_id}}.value" value="{{cost}}" dtype="Radio">
+            <label for="squad-{{u_id}}-{{cost}}"></label>
+            {{/each}}
+            {{/multiboxes}}
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      {{/each}}
+    </div>
 
 
     {{!-- Crew Upgrades --}}

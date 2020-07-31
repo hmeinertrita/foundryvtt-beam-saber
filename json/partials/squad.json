@@ -20,255 +20,255 @@
     "value": [0],
     "storage": [0]
   },
-  "features": {
+  "upgrades": {
     "forward_operating_base": {
       "airfield": {
-        "cost": 2,
+        "cost": [1,2],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Airfield"
       },
       "barracks": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Barracks"
       },
       "blacksite": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Blacksite"
       },
       "cctv_network": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "CCTV Network"
       },
       "collection_agency": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Collection Agency"
       },
       "commissary": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Commissary"
       },
       "cover_business": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Cover Business"
       },
       "factory": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Factory"
       },
       "forgers_workshop": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Forgers Workshop"
       },
       "guerilla_hideout": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Guerilla Hideout"
       },
       "hack_lab": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Hack Lab"
       },
       "hidden_FOB": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Hidden FOB"
       },
       "holo_grid": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Holo-Grid"
       },
       "infirmary": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Infirmary"
       },
       "lighthouse_satellite": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Lightouse Satellite"
       },
       "loyal_bar": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Loyal Bar"
       },
       "luxury_venue": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Luxury Venue"
       },
       "motor_pool": {
-        "cost": 2,
+        "cost": [1,2],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Motor Pool"
       },
       "personal_clothier": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Personal Clothier"
       },
       "propaganda_radio": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Propaganda Radio"
       },
       "public_works": {
-        "cost": 6,
+        "cost": [1,2,3,4,5,6],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Public Works"
       },
       "quarters": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Quarters"
       },
       "radar_station": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Radar Station"
       },
       "refit_station": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Refit Station"
       },
       "regional_records": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Regional Records"
       },
       "scrapyard": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Scrapyard"
       },
       "secret_routes": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Secret Routes"
       },
       "secure_FOB": {
-        "cost": 2,
+        "cost": [1,2],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Secure FOB"
       },
       "side_business": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Side Business"
       },
       "supercomputer": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Supercomputer"
       },
       "training_course": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Training Course"
       },
       "transmitter_array": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Transmitter Array"
       },
       "trophies_room": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Trophies Room"
       },
       "tunnels": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Tunnels"
       },
       "warehouse": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Warehouse"
       },
       "workshop": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
@@ -277,49 +277,49 @@
     },
     "quality": {
       "documents": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Documents"
       },
       "gear": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Gear"
       },
       "programs": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Programs"
       },
       "supplies": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Supplies"
       },
       "tools": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Tools"
       },
       "pilot_weapons": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Pilot Weapons"
       },
       "vehicle_weapons": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
@@ -328,35 +328,35 @@
     },
     "training": {
       "insight": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Insight"
       },
       "prowess": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Prowess"
       },
       "resolve": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Resolve"
       },
       "test_facility": {
-        "cost": 1,
+        "cost": [1],
         "connected": false,
         "value": [0],
         "description": "",
         "name": "Test Facility"
       },
       "mastery": {
-        "cost": 4,
+        "cost": [1,2,3,4],
         "connected": true,
         "value": [0],
         "description": "",
