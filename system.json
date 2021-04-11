@@ -10,9 +10,9 @@
   "esmodules": ["module/blades.js"],
   "styles": ["styles/blades.css"],
   "languages": ["en"],
-  "url": "https://github.com/megastruktur/foundryvtt-beam-saber/",
-  "manifest": "https://raw.githubusercontent.com/megastruktur/foundryvtt-beam-saber/0.6.0/system.json",
-  "download": "https://github.com/megastruktur/foundryvtt-beam-saber/archive/0.6.0.zip",
+  "url": "https://github.com/hmeinertrita/foundryvtt-beam-saber/",
+  "manifest": "https://raw.githubusercontent.com/hmeinertrita/foundryvtt-beam-saber/master/system.json",
+  "download": "https://github.com/hmeinertrita/foundryvtt-beam-saber/archive/0.6.0.zip",
   "packs": [
     {
       "name": "class",
